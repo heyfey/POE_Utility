@@ -25,54 +25,67 @@ XButton2::QuickFlask()
 QuickFlask(){
     ; Send {1}
     ; Sleep 50
-    ; Send {2}
-    ; Sleep 50
+    Send {2}
+    Sleep 50
     Send {3}
     Sleep 50
     Send {4}
     Sleep 50
     Send {5}
+    Sleep 50
+    Send {q} ; 暗影迷蹤
+    Sleep 50
+    Send {r} ; 鮮血狂怒
     return
 }
 
 XButton1::
+    send {q}
     Send {3}
     return
 
 ~F2::Global("2")
 
+~F6::Global("820") ; 換圖頻道
+
 Global(channel){
     BlockInput On
+    temp := Clipboard
     Send {Enter}
     Clipboard = /global %channel%
     Send ^v
     Send {Enter}
+    Clipboard := temp
     BlockInput Off
     return
 }
 
-~F3::Trade("820")
+~F3::Trade("820") ; 換圖頻道
 
 ~F4::Trade("821")
 
 Trade(channel){
     BlockInput On
+    temp := Clipboard
     Send {Enter}
     Clipboard = /trade %channel%
     Send ^v
     Send {Enter}
+    Clipboard := temp
     BlockInput Off
     return
 }
 
-~F5::HideOut()
+~F5::HideOut() ; 進入藏身處
 
 HideOut(){
     BlockInput On
+    temp := Clipboard
     Send {Enter}
     Clipboard = /hideout
     Send ^v
     Send {Enter}
+    Clipboard := temp
     BlockInput Off
     return
 }
