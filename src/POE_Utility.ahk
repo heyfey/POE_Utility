@@ -19,13 +19,46 @@ global resolutionY = 900
 global portalX = 1573
 global portalY = 665
 
+; 低血量時自動喝水
+global low_life_X = 98
+global low_life_Y = 811
+global life_color = 0x110C6C
+global auto_flask_active = False
+
+~F7::AutoFlask() ; 開啟/關閉自動喝水
+
+AutoFlask(){
+    if !auto_flask_active{
+        auto_flask_active := True
+        MsgBox Auto flask : On
+        Active()
+    }
+    else{
+        auto_flask_active := False
+        MsgBox Auto flask : Off
+    }
+}
+
+Active(){
+    while auto_flask_active and WinActive("Path of Exile")
+    {
+        PixelGetColor, color, low_life_X, low_life_Y
+        if color != %life_color%
+        {
+            Send {1} ; 生命藥劑
+            ; Sleep 50
+            ; Send {w} ; 不朽怒嚎/堅決戰吼
+            Sleep 200
+        }
+    }
+}
 
 XButton2::QuickFlask()
 
 QuickFlask(){
     ; Send {1}
     ; Sleep 50
-    Send {2}
+    Send {2} ; 2, 3, 4, 5是藥水
     Sleep 50
     Send {3}
     Sleep 50
