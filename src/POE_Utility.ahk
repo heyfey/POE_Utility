@@ -1,4 +1,4 @@
-#include SearchItemTW.ahk
+#include SearchItem.ahk
 
 #IfWinActive, Path of Exile
 #SingleInstance force
