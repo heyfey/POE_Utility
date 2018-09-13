@@ -80,45 +80,21 @@ XButton1::
     Send {3}
     return
 
-~F2::Global("2")
+~F2::QuickEnter("global 2")
 
-~F6::Global("820") ; 換圖頻道
+~F3::QuickEnter("trade 820") ; 換圖頻道
 
-Global(channel){
+~F4::QuickEnter("trade 821")
+
+~F5::QuickEnter("hideout") ; 進入藏身處
+
+~F6::QuickEnter("global 820") ; 換圖頻道
+
+QuickEnter(channel){
     BlockInput On
     temp := Clipboard
     Send {Enter}
-    Clipboard = /global %channel%
-    Send ^v
-    Send {Enter}
-    Clipboard := temp
-    BlockInput Off
-    return
-}
-
-~F3::Trade("820") ; 換圖頻道
-
-~F4::Trade("821")
-
-Trade(channel){
-    BlockInput On
-    temp := Clipboard
-    Send {Enter}
-    Clipboard = /trade %channel%
-    Send ^v
-    Send {Enter}
-    Clipboard := temp
-    BlockInput Off
-    return
-}
-
-~F5::HideOut() ; 進入藏身處
-
-HideOut(){
-    BlockInput On
-    temp := Clipboard
-    Send {Enter}
-    Clipboard = /hideout
+    Clipboard = /%channel%
     Send ^v
     Send {Enter}
     Clipboard := temp
