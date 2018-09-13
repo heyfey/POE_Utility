@@ -19,15 +19,28 @@ global resolutionY = 900
 global portalX = 1573
 global portalY = 665
 
-; 低血量時自動喝水
+global quick_flask_list = "2-3-4-5-q-r"
+; This is a sequence of keys to send in QuickFlask, use '-' as a delimiter.
+; In my case: "2-3-4-5-q-r"
+;     2, 3, 4, 5 : Utility Flasks (功能藥劑)
+;     q : Phase Run (暗影迷蹤) 
+;     r : Blood Rage (鮮血狂怒)
+
+; Auto flask when low life. 低血量時自動喝水
 global low_life_X = 98
 global low_life_Y = 811
 global life_color = 0x110C6C
 global auto_flask_active = False
+global low_life_flask_list = "1-q" ; Keys to send when low life, use '-' as a delimiter.
+; In my case: "1-q-w"
+;     1 : Life Flask (生命藥劑)
+;     q : Phase Run (暗影迷蹤) 
+;     w : Immortal Call/Enduring Cry (不朽怒嚎/堅決戰吼)
 
 ; Search url
-; url = https://www.pathofexile.com/trade/search/Delve ; International sever
-url = https://web.poe.garena.tw/trade/search/%E6%8E%98%E7%8D%84%E8%81%AF%E7%9B%9F ; Taiwan server
+; url = https://www.pathofexile.com/trade/search/Delve ; International sever (國際服)
+url = https://web.poe.garena.tw/trade/search/%E6%8E%98%E7%8D%84%E8%81%AF%E7%9B%9F ; Taiwan server (台服)
+
 
 ~F7::AutoFlask() ; 開啟/關閉自動喝水
 
@@ -41,6 +54,7 @@ AutoFlask(){
         auto_flask_active := False
         MsgBox Auto flask : Off
     }
+    return
 }
 
 Active(){
@@ -51,37 +65,26 @@ Active(){
             PixelGetColor, color, low_life_X, low_life_Y
             if color != %life_color%
             {
-                Send {1} ; 生命藥劑
-                ; Sleep 50
-                ; Send {w} ; 不朽怒嚎/堅決戰吼
-                Sleep 200
+                QuickFlask(low_life_flask_list)
+                Sleep 150
             }
         }
     }
+    return
 }
 
-XButton2::QuickFlask()
+XButton2::QuickFlask(quick_flask_list)
 
-QuickFlask(){
-    ; Send {1}
-    ; Sleep 50
-    Send {2} ; 2, 3, 4, 5是藥水
-    Sleep 50
-    Send {3}
-    Sleep 50
-    Send {4}
-    Sleep 50
-    Send {5}
-    Sleep 50
-    Send {q} ; 暗影迷蹤
-    Sleep 50
-    Send {r} ; 鮮血狂怒
+QuickFlask(list){
+    Loop, parse, list, -
+    {
+        Send {%A_LoopField%}
+        Sleep 50
+    }
     return
 }
 
 XButton1::
-    send {q}
-    Send {3}
     return
 
 ~F2::QuickEnter("global 2")
