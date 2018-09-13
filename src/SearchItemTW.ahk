@@ -55,8 +55,8 @@ ItemAnalysis(){
 SearchItem(){
     ie := ComObjCreate("InternetExplorer.Application")
     ie.Visible := true  ; This is known to work incorrectly on IE7.
-    ;ie.Navigate("https://www.pathofexile.com/trade/search/Incursion") ; International sever
-    ie.Navigate("https://web.poe.garena.tw/trade/search/%E7%A9%BF%E8%B6%8A%E8%81%AF%E7%9B%9F") ; Taiwan server
+    ;ie.Navigate("https://www.pathofexile.com/trade/search/Delve") ; International sever
+    ie.Navigate("https://web.poe.garena.tw/trade/search/%E6%8E%98%E7%8D%84%E8%81%AF%E7%9B%9F") ; Taiwan server
     Sleep 100
     
     ;判斷網頁是否載入完畢,30秒內

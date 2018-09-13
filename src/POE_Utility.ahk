@@ -40,15 +40,18 @@ AutoFlask(){
 }
 
 Active(){
-    while auto_flask_active and WinActive("Path of Exile")
+    while auto_flask_active
     {
-        PixelGetColor, color, low_life_X, low_life_Y
-        if color != %life_color%
+        if WinActive("Path of Exile")
         {
-            Send {1} ; 生命藥劑
-            ; Sleep 50
-            ; Send {w} ; 不朽怒嚎/堅決戰吼
-            Sleep 200
+            PixelGetColor, color, low_life_X, low_life_Y
+            if color != %life_color%
+            {
+                Send {1} ; 生命藥劑
+                ; Sleep 50
+                ; Send {w} ; 不朽怒嚎/堅決戰吼
+                Sleep 200
+            }
         }
     }
 }
