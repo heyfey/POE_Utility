@@ -25,6 +25,10 @@ global low_life_Y = 811
 global life_color = 0x110C6C
 global auto_flask_active = False
 
+; Search url
+; url = https://www.pathofexile.com/trade/search/Delve ; International sever
+url = https://web.poe.garena.tw/trade/search/%E6%8E%98%E7%8D%84%E8%81%AF%E7%9B%9F ; Taiwan server
+
 ~F7::AutoFlask() ; 開啟/關閉自動喝水
 
 AutoFlask(){
@@ -181,7 +185,7 @@ OpenPortal(){
     temp := Clipboard
     Clipboard := GetItemName()
     if Clipboard !=
-        SearchItem()
+        SearchItem(url)
     Clipboard := temp
     return
 

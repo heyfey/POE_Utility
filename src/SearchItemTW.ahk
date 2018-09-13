@@ -40,7 +40,7 @@ ItemAnalysis(){
         {
             Key := A_LoopField
         }
-        else if(i == 2)
+        else if(i==2)
         {
             Key := Key " " A_LoopField
         }
@@ -52,11 +52,10 @@ ItemAnalysis(){
     return Key   
 }
 
-SearchItem(){
+SearchItem(url){
     ie := ComObjCreate("InternetExplorer.Application")
     ie.Visible := true  ; This is known to work incorrectly on IE7.
-    ;ie.Navigate("https://www.pathofexile.com/trade/search/Delve") ; International sever
-    ie.Navigate("https://web.poe.garena.tw/trade/search/%E6%8E%98%E7%8D%84%E8%81%AF%E7%9B%9F") ; Taiwan server
+    ie.Navigate(url)
     Sleep 100
     
     ;判斷網頁是否載入完畢,30秒內
@@ -70,8 +69,8 @@ SearchItem(){
         catch
         {
         }
-        ;IfInString, aa, Search ; check if aa == Search (for International server)
-        IfInString, aa, ... ; check if aa == "搜尋道具..."
+ 
+        if aa contains ...,Search ; check if aa == 搜尋道具... or Search
         {
             break
         }
