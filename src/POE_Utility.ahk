@@ -11,10 +11,6 @@ SetDefaultMouseSpeed, 0
 ; 設定要撿拾物品的顏色(可用Ctrl + D查詢)
 global lootColor = 0x790062 ; for SetTextColor 100 0 122 255
 
-; 設定解析度
-global resolutionX = 1600
-global resolutionY = 900
-
 ; 傳送卷軸的座標(可用Ctrl + D查詢), 在我的畫面中是物品欄的最右下角
 global portalX = 1573
 global portalY = 665
@@ -149,7 +145,7 @@ LootAll(){
 }
 
 LootBigRegion(){
-    PixelSearch, Px, Py, 100, 100, resolutionX-10, resolutionY-150, lootColor, 5, Fast
+    PixelSearch, Px, Py, 100, 100, A_ScreenWidth-10, A_ScreenHeight-150, lootColor, 5, Fast
     if ErrorLevel{
         return False
     }
