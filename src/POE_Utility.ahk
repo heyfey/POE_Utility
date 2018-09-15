@@ -92,6 +92,8 @@ XButton1::
 
 ~F6::QuickEnter("global 820") ; 換圖頻道
 
+~^`::QuickEnter("exit") ; Exit to char selection
+
 QuickEnter(channel){
     BlockInput On
     temp := Clipboard
