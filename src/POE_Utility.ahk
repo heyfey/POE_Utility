@@ -23,9 +23,9 @@ global quick_flask_list = "2-3-4-5-q-r"
 ;     r : Blood Rage (鮮血狂怒)
 
 ; Auto flask when low life. 低血量時自動喝水
-global low_life_X = 98
-global low_life_Y = 811
-global life_color = 0x110C6C
+global low_life_X = 149
+global low_life_Y = 796
+global life_color = 0x1C1770
 global auto_flask_active = False
 global low_life_flask_list = "1-q" ; Keys to send when low life, use '-' as a delimiter.
 ; In my case: "1-q-w"
@@ -41,13 +41,12 @@ url = https://web.poe.garena.tw/trade/search/%E6%8E%98%E7%8D%84%E8%81%AF%E7%9B%9
 ~F7::AutoFlask() ; 開啟/關閉自動喝水
 
 AutoFlask(){
-    if !auto_flask_active{
-        auto_flask_active := True
+    auto_flask_active := !auto_flask_active
+    if auto_flask_active{
         MsgBox Auto flask : On
         Active()
     }
     else{
-        auto_flask_active := False
         MsgBox Auto flask : Off
     }
     return
