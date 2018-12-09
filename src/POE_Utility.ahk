@@ -33,9 +33,43 @@ global low_life_flask_list = "1-q" ; Keys to send when low life, use '-' as a de
 ;     q : Phase Run (暗影迷蹤) 
 ;     w : Immortal Call/Enduring Cry (不朽怒嚎/堅決戰吼)
 
+; Auto detonate mine when pushing right button. 自動引爆地雷
+global auto_detonate_active = False
+
 ; Search url
 ; url = https://www.pathofexile.com/trade/search/Delve ; International sever (國際服)
 url = https://web.poe.garena.tw/trade/search/%E6%8E%98%E7%8D%84%E8%81%AF%E7%9B%9F ; Taiwan server (台服)
+
+
+~RButton::AutoDetonate()
+
+AutoDetonate(){
+    if auto_detonate_active{
+        while (GetKeyState("RButton", "P")){
+            Send {RButton}
+            Sleep 400
+            Send {d}
+            Random, rand, 10, 40
+            Sleep rand
+        }
+    }
+    else{
+    }
+}
+
+~^d::AutoDetonate_Active() ; 開啟/關閉自動引爆地雷
+
+AutoDetonate_Active(){
+    auto_detonate_active := !auto_detonate_active
+    if auto_detonate_active{
+        MsgBox , 0, , Auto Detonate : On, 0.5
+        ActiveAutoFlask()
+    }
+    else{
+        MsgBox , 0, , Auto Detonate : Off, 0.5
+    }
+    return
+}
 
 
 ~F7::AutoFlask() ; 開啟/關閉自動喝水
@@ -43,16 +77,16 @@ url = https://web.poe.garena.tw/trade/search/%E6%8E%98%E7%8D%84%E8%81%AF%E7%9B%9
 AutoFlask(){
     auto_flask_active := !auto_flask_active
     if auto_flask_active{
-        MsgBox Auto flask : On
-        Active()
+        MsgBox , 0, , Auto flask : On, 0.5
+        ActiveAutoFlask()
     }
     else{
-        MsgBox Auto flask : Off
+        MsgBox , 0, , Auto flask : Off, 0.5
     }
     return
 }
 
-Active(){
+ActiveAutoFlask(){
     while auto_flask_active
     {
         if WinActive("Path of Exile")
@@ -106,7 +140,7 @@ QuickEnter(channel){
     return
 }
    
-~^d::CheckMousePos() ; Get mouse position and color.
+~+d::CheckMousePos() ; Get mouse position and color.
 
 CheckMousePos(){
     MouseGetPos, MouseX, MouseY
