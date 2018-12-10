@@ -1,3 +1,4 @@
+#Include functions.ahk
 #include SearchItem.ahk
 
 #IfWinActive, Path of Exile
@@ -42,82 +43,19 @@ global auto_flask_active = False
 global auto_detonate_active = False
 
 ; Search item url
-; url = https://www.pathofexile.com/trade/search/Delve ; International sever
-url = https://web.poe.garena.tw/trade/search/%E6%8E%98%E7%8D%84%E8%81%AF%E7%9B%9F ; 台服
+; global url = "https://www.pathofexile.com/trade/search/Delve" ; International sever
+global url = "https://web.poe.garena.tw/trade/search/%E6%8E%98%E7%8D%84%E8%81%AF%E7%9B%9F" ; 台服
 
 ;===============================================================================
 
 
 ~RButton::AutoDetonate()
 
-AutoDetonate(){
-    if auto_detonate_active{
-        while (GetKeyState("RButton", "P")){
-            Send {RButton}
-            Sleep 400
-            Send {d}
-            Random, rand, 10, 40
-            Sleep rand
-        }
-    }
-    else{
-    }
-}
-
 ~^d::Activate_AutoDetonate() ; 開啟/關閉自動引爆地雷
-
-Activate_AutoDetonate(){
-    auto_detonate_active := !auto_detonate_active
-    if auto_detonate_active{
-        MsgBox , 0, , Auto Detonate : On, 0.5
-    }
-    else{
-        MsgBox , 0, , Auto Detonate : Off, 0.5
-    }
-    return
-}
-
 
 ~F7::Activate_AutoFlask() ; 開啟/關閉自動喝水
 
-Activate_AutoFlask(){
-    auto_flask_active := !auto_flask_active
-    if auto_flask_active{
-        MsgBox , 0, , Auto flask : On, 0.5
-        AutoFlask()
-    }
-    else{
-        MsgBox , 0, , Auto flask : Off, 0.5
-    }
-    return
-}
-
-AutoFlask(){
-    while auto_flask_active
-    {
-        if WinActive("Path of Exile")
-        {
-            PixelGetColor, color, low_life_X, low_life_Y
-            if color != %life_color%
-            {
-                QuickFlask(low_life_flask_list)
-                Sleep 150
-            }
-        }
-    }
-    return
-}
-
 XButton2::QuickFlask(quick_flask_list)
-
-QuickFlask(list){
-    Loop, parse, list, -
-    {
-        Send {%A_LoopField%}
-        Sleep 50
-    }
-    return
-}
 
 XButton1::
     return
@@ -133,27 +71,8 @@ XButton1::
 ~F6::QuickEnter("global 820") ; 換圖頻道
 
 ~^`::QuickEnter("exit") ; Exit to char selection
-
-QuickEnter(channel){
-    BlockInput On
-    temp := Clipboard
-    Send {Enter}
-    Clipboard = /%channel%
-    Send ^v
-    Send {Enter}
-    Clipboard := temp
-    BlockInput Off
-    return
-}
    
 ~+d::CheckMousePos() ; Get mouse position and color.
-
-CheckMousePos(){
-    MouseGetPos, MouseX, MouseY
-    PixelGetColor, color, %MouseX%, %MouseY%
-    MsgBox, x=%MouseX% y=%MouseY% Color=%color%.
-    return
-}
 
 ; Loot one.
 ~a::
@@ -162,70 +81,9 @@ CheckMousePos(){
     }
     return
 
-
 ~^a::LootAll()
-
-LootAll(){
-    while (GetKeyState("LControl", "P") && GetKeyState("a", "P")){
-        if !LootSmallRegion(){
-            break
-        }
-        Sleep 400
-    }
-
-    while (GetKeyState("LControl", "P") && GetKeyState("a", "P")){
-        LootBigRegion()
-        Sleep 1200
-        while (GetKeyState("LControl", "P") && GetKeyState("a", "P")){
-            if !LootSmallRegion(){
-                break
-            }
-            Sleep 400
-        }
-    }
-}
-
-LootBigRegion(){
-    PixelSearch, Px, Py, 100, 100, A_ScreenWidth-10, A_ScreenHeight-150, lootColor, 5, Fast
-    if ErrorLevel{
-        return False
-    }
-    else{
-        Click %Px%, %Py%
-        return True
-    }
-}
-
-LootSmallRegion(){
-    PixelSearch, Px, Py, 650, 300, 950, 500, lootColor, 5, Fast
-    if ErrorLevel{
-        return False
-    }
-    else{
-        Click %Px%, %Py%
-        return True
-    }
-}
 
 ~^f::OpenPortal()
 
-OpenPortal(){
-    BlockInput On
-    MouseGetPos x, y
-    Send {i}
-    Click, %portalX%, %portalY%, right
-    Send {i}
-    MouseMove, x, y
-    BlockInput Off
-    return
-}
-
-; Quick search item.
-~^PgUp::
-    temp := Clipboard
-    Clipboard := GetItemName()
-    if Clipboard !=
-        SearchItem(url)
-    Clipboard := temp
-    return
+~^PgUp::QuickSearchItem()
 
