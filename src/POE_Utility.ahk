@@ -8,37 +8,44 @@
 
 SetDefaultMouseSpeed, 0
 
-; 設定要撿拾物品的顏色(可用Ctrl + D查詢)
-global lootColor = 0x790062 ; for SetTextColor 100 0 122 255
+;===============================================================================
+; Settings:
+;===============================================================================
+; 設定要撿拾物品的顏色(可用Shift + D查詢)
+global lootColor = 0x790062 ; for SetBorderColor 100 0 122 255
 
-; 傳送卷軸的座標(可用Ctrl + D查詢), 在我的畫面中是物品欄的最右下角
-global portalX = 1573
-global portalY = 665
+; 傳送卷軸的座標(可用Shift + D查詢), 在我的畫面中是物品欄的最右下角
+global portalX = 1886
+global portalY = 807
 
 global quick_flask_list = "2-3-4-5-q-r"
 ; This is a sequence of keys to send in QuickFlask, use '-' as a delimiter.
 ; In my case: "2-3-4-5-q-r"
-;     2, 3, 4, 5 : Utility Flasks (功能藥劑)
-;     q : Phase Run (暗影迷蹤) 
-;     r : Blood Rage (鮮血狂怒)
+;     [2, 3, 4, 5]: Utility Flasks (功能藥劑)
+;     [q]: Phase Run (暗影迷蹤) 
+;     [r]: Blood Rage (鮮血狂怒)
 
-; Auto flask when low life. 低血量時自動喝水
-global low_life_X = 149
-global low_life_Y = 796
-global life_color = 0x1C1770
-global auto_flask_active = False
+; Auto flask when low life. 
+; 低血量時自動喝水
+global low_life_X = 182
+global low_life_Y = 970
+global life_color = 0x161350
 global low_life_flask_list = "1-q" ; Keys to send when low life, use '-' as a delimiter.
 ; In my case: "1-q-w"
-;     1 : Life Flask (生命藥劑)
-;     q : Phase Run (暗影迷蹤) 
-;     w : Immortal Call/Enduring Cry (不朽怒嚎/堅決戰吼)
+;     [1]: Life Flask (生命藥劑)
+;     [q]: Phase Run (暗影迷蹤) 
+;     [w]: Immortal Call/Enduring Cry (不朽怒嚎/堅決戰吼)
+global auto_flask_active = False
 
-; Auto detonate mine when pushing right button. 自動引爆地雷
+; Auto detonate mine when pushing right button. 
+; 自動引爆地雷
 global auto_detonate_active = False
 
-; Search url
-; url = https://www.pathofexile.com/trade/search/Delve ; International sever (國際服)
-url = https://web.poe.garena.tw/trade/search/%E6%8E%98%E7%8D%84%E8%81%AF%E7%9B%9F ; Taiwan server (台服)
+; Search item url
+; url = https://www.pathofexile.com/trade/search/Delve ; International sever
+url = https://web.poe.garena.tw/trade/search/%E6%8E%98%E7%8D%84%E8%81%AF%E7%9B%9F ; 台服
+
+;===============================================================================
 
 
 ~RButton::AutoDetonate()
@@ -57,13 +64,12 @@ AutoDetonate(){
     }
 }
 
-~^d::AutoDetonate_Active() ; 開啟/關閉自動引爆地雷
+~^d::Activate_AutoDetonate() ; 開啟/關閉自動引爆地雷
 
-AutoDetonate_Active(){
+Activate_AutoDetonate(){
     auto_detonate_active := !auto_detonate_active
     if auto_detonate_active{
         MsgBox , 0, , Auto Detonate : On, 0.5
-        ActiveAutoFlask()
     }
     else{
         MsgBox , 0, , Auto Detonate : Off, 0.5
@@ -72,13 +78,13 @@ AutoDetonate_Active(){
 }
 
 
-~F7::AutoFlask() ; 開啟/關閉自動喝水
+~F7::Activate_AutoFlask() ; 開啟/關閉自動喝水
 
-AutoFlask(){
+Activate_AutoFlask(){
     auto_flask_active := !auto_flask_active
     if auto_flask_active{
         MsgBox , 0, , Auto flask : On, 0.5
-        ActiveAutoFlask()
+        AutoFlask()
     }
     else{
         MsgBox , 0, , Auto flask : Off, 0.5
@@ -86,7 +92,7 @@ AutoFlask(){
     return
 }
 
-ActiveAutoFlask(){
+AutoFlask(){
     while auto_flask_active
     {
         if WinActive("Path of Exile")
