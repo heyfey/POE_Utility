@@ -51,39 +51,38 @@ global url = "https://web.poe.garena.tw/trade/search/%E6%8E%98%E7%8D%84%E8%81%AF
 
 ~RButton::AutoDetonate()
 
-~^d::Activate_AutoDetonate() ; 開啟/關閉自動引爆地雷
+~^d::Activate_AutoDetonate()               ; Ctrl+d: 開啟/關閉自動引爆地雷
 
-~F7::Activate_AutoFlask() ; 開啟/關閉自動喝水
+~F7::Activate_AutoFlask()                  ; F7: 開啟/關閉自動喝水
 
-XButton2::QuickFlask(quick_flask_list)
+XButton2::QuickFlask(quick_flask_list)     ; Side button: 一鍵嗑藥
 
 XButton1::
     return
 
-~F2::QuickEnter("global 2")
+~F2::QuickEnter("global 2")                ; F2: 世界2
 
-~F3::QuickEnter("trade 820") ; 換圖頻道
+~F3::QuickEnter("trade 820")               ; F3: 交易820
 
-~F4::QuickEnter("trade 821")
+~F4::QuickEnter("trade 821")               ; F4: 交易821
 
-~F5::QuickEnter("hideout") ; 進入藏身處
+~F5::QuickEnter("hideout")                 ; F5: 進入藏身處
 
-~F6::QuickEnter("global 820") ; 換圖頻道
+~F6::QuickEnter("global 820")              ; F6: 世界820
 
-~^`::QuickEnter("exit") ; Exit to char selection
+~^`::QuickEnter("exit")                    ; Ctrl+~: Exit to char selection
    
-~+d::CheckMousePos() ; Get mouse position and color.
+~+d::CheckMousePos()                       ; Shift+d: Get mouse position and color.
 
-; Loot one.
-~a::
+~a::                                       ; a: Loot one item.
     if !LootSmallRegion(){
         LootBigRegion()
     }
     return
 
-~^a::LootAll()
+~^a::LootAll()                             ; Ctrl+a: Hold to keep looting.
 
-~^f::OpenPortal()
+~^f::OpenPortal()                          ; Ctrl+f: Use portal scroll 
 
-~^PgUp::QuickSearchItem()
+~^PgUp::QuickSearchItem()                  ; Ctrl+PageUp: Search item on official trade.
 
