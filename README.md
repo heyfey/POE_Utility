@@ -18,6 +18,8 @@
 
 #### Shortcuts ####
 
+主要功能：
+
 |Shortcut|Description|
 |---    |---    |
 | `側鍵`      | 一鍵嗑藥 
@@ -27,12 +29,22 @@
 | `Ctrl + D`      | 開啟/關閉自動引爆地雷
 | `Ctrl + F`      | 使用傳送卷軸 
 | `Ctrl + PageUp`      | 在賣場查詢指到的物品 (如果沒指到任何物品則用"輸入"查詢)
+
+快速指令：
+
+|Shortcut|Description|
+|---    |---    |
 | `F2`      | 世界2
 | `F3`      | 交易820
 | `F4`      | 交易821
 | `F5`      | 進入藏身處
 | `F6`      | 世界820
 | `Ctrl + ~`      | 回到角色選擇畫面
+
+其他：
+
+|Shortcut|Description|
+|---    |---    |
 | `Shift + D`      | 取得滑鼠座標, 顏色
 
 #### Customize Settings ####
