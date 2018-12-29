@@ -6,11 +6,20 @@
 
 此腳本包含許多高度客製化的功能，故需先進行設定後才能順利運作。下方將提供詳盡的教學。
 
-#### Warning ####
+#### 警告 ####
 
 請注意，此腳本的許多功能**絕對違反**了遊戲規章。請自行斟酌使用，作者將不負任何責任>>>[可以參考這裡](https://www.ptt.cc/bbs/PathofExile/M.1536799446.A.BB1.html)
 
-#### Shortcuts ####
+#### 使用說明 ####
+
+1. 下載並安裝 [AutoHotKey](https://www.autohotkey.com/)。 如果不能順利運行，可以試試 `AutoHotkey_1.1.28.02` 版本。
+
+2. `Clone or download`下載本專案所有原始碼。
+
+3. 以系統管理員身分執行 **POE_Utility.ahk**
+
+
+#### 快捷鍵列表 ####
 
 |Shortcut|Description|
 |---    |---    |
@@ -35,19 +44,10 @@
 |---    |---    |
 | `Shift + D`      | 取得滑鼠座標, 顏色
 
-#### Usage ####
 
-1. Install [AutoHotKey](https://www.autohotkey.com/). If AHK crashes when starting POE-Utility, try and use a different version, `AutoHotkey_1.1.28.02` should always work.
-
-2. Download the [latest release].
-
-3. Run **POE_Utility.ahk**.
-
-4. Some options, including the league can be changed by editing `.ini`.
-
-#### Customize Settings ####
+#### 設定 ####
 好麻煩，先自己看註解
 
-#### Video ####
+#### 影片 ####
 
 <a href="https://www.youtube.com/watch?v=-sM8SynMM5I" target="_blank"></a>
