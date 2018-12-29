@@ -6,7 +6,7 @@
 
 "這裡有一串免責聲明"<<<[參考](https://www.ptt.cc/bbs/PathofExile/M.1536799446.A.BB1.html)
 
-#### Usage / Instructions ####
+#### Usage ####
 
 1. Install [AutoHotKey](https://www.autohotkey.com/). If AHK crashes when starting POE-Utility, try and use a different version, `AutoHotkey_1.1.28.02` should always work.
 
