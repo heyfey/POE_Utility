@@ -2,7 +2,7 @@ AutoDetonate(){
     if auto_detonate_active{
         while (GetKeyState("RButton", "P")){
             Send {RButton}
-            Sleep 400
+            Sleep mine_laying_time
             Send {d}
             Random, rand, 10, 40
             Sleep rand
