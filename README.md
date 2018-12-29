@@ -4,15 +4,15 @@
 
 #### Warning ####
 
-參考[關於隔壁龍板某篇分享的Autohotkey使用](https://www.ptt.cc/bbs/PathofExile/M.1536799446.A.BB1.html)
+"這裡有一串免責聲明"<<<[參考](https://www.ptt.cc/bbs/PathofExile/M.1536799446.A.BB1.html)
 
 #### Usage / Instructions ####
 
-1. Install AHK (http://ahkscript.org). If AHK crashes when starting POE-Utility, try and use a different version, `AutoHotkey_1.1.28.02` should always work.
+1. Install [AutoHotKey](https://www.autohotkey.com/). If AHK crashes when starting POE-Utility, try and use a different version, `AutoHotkey_1.1.28.02` should always work.
 
 2. Download the [latest release].
 
-3. Run **POE-Utility.ahk_**.
+3. Run **POE_Utility.ahk**.
 
 4. Some options, including the league can be changed by editing `.ini`.
 
@@ -37,6 +37,6 @@
 
 #### Customize Settings ####
 
-#### Media / Video ####
+#### Video ####
 
 <a href="https://www.youtube.com/watch?v=-sM8SynMM5I" target="_blank"></a>
