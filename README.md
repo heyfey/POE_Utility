@@ -18,19 +18,19 @@
 
 #### Shortcuts ####
 
-主要功能：
+主要功能
 
 |Shortcut|Description|
 |---    |---    |
 | `側鍵`      | 一鍵嗑藥 
-| `F7`      | 開起/關閉自動喝水
+| `F7`      | 開啟/關閉自動喝水
 | `A`      | 快速撿裝
 | `Ctrl + A`      | "按住"持續撿取物品
 | `Ctrl + D`      | 開啟/關閉自動引爆地雷
 | `Ctrl + F`      | 使用傳送卷軸 
 | `Ctrl + PageUp`      | 在賣場查詢指到的物品 (如果沒指到任何物品則用"輸入"查詢)
 
-快速指令：
+快速指令
 
 |Shortcut|Description|
 |---    |---    |
@@ -41,13 +41,14 @@
 | `F6`      | 世界820
 | `Ctrl + ~`      | 回到角色選擇畫面
 
-其他：
+其他
 
 |Shortcut|Description|
 |---    |---    |
 | `Shift + D`      | 取得滑鼠座標, 顏色
 
 #### Customize Settings ####
+好麻煩，先自己看註解
 
 #### Video ####
 
