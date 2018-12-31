@@ -12,13 +12,15 @@
 
 ---
 
-#### 使用說明 ####
+#### 如何使用 ####
 
 1. 下載並安裝 [AutoHotKey](https://www.autohotkey.com/)。 如果不能順利運行，可以試試 `AutoHotkey_1.1.28.02` 版本。
 
 2. `Clone or download`下載本專案所有原始碼。
 
-3. 以系統管理員身分執行 `POE_Utility.ahk`
+3. 按照[設定](#設定)中的步驟完成基本設定。
+
+4. 以系統管理員身分執行 `POE_Utility.ahk`
 
 ---
 
