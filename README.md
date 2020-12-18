@@ -1,4 +1,8 @@
 
+[English guide](https://github.com/heyfey/POE_Utility/blob/master/README-EN.md)
+
+---
+
 **POE-Utility**
 是一份AHK腳本，提供了一系列POE的快捷鍵包括：一鍵喝水、快速撿裝、自動喝水/引爆地雷、切換頻道等等。
 並且根據實際需求，持續擴充當中。
