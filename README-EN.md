@@ -1,6 +1,6 @@
 [中文版說明](https://github.com/heyfey/POE_Utility/blob/master/README.md)
 
-**POE-Utility** is an [AutoHotkey](https://www.autohotkey.com/) Script, which provides shortcuts for PoE such as: quick-flasks, quick-loot, auto-flasks, auto-detonate, and switch channel, etc. These shorcuts can significantly improve one's gaming experience
+**POE-Utility** is an [AutoHotkey](https://www.autohotkey.com/) script, which provides shortcuts for PoE such as: quick-flasks, quick-loot, auto-flasks, auto-detonate, and switch channel, etc. These shorcuts can significantly improve one's gaming experience
 
 Though I simply implement some features I need, any suggestion is welcome. Feel free to open issues or contact tsungtsohsieh@gmail.com
 
@@ -30,13 +30,15 @@ Though I simply implement some features I need, any suggestion is welcome. Feel 
 
 ### usage ###
 
-1. Download and install [AutoHotKey](https://www.autohotkey.com/); If unexpectedly shutdown or hang, try version [`AutoHotkey_1.1.28.02`](https://www.autohotkey.com/download/1.1/)
+1. Clone or download this repository
 
-2. Clone or download this repository
+2. Run `POE_Utility.exe` **as administrator**
 
-3. Complete preliminary [settings](#settings).
+~~1. Download and install [AutoHotKey](https://www.autohotkey.com/); If unexpectedly shutdown or hang, try version [`AutoHotkey_1.1.28.02`](https://www.autohotkey.com/download/1.1/)~~
 
-4. Run `POE_Utility.ahk` **as administrator**
+~~2. Clone or download this repository~~
+
+~~3. Run `POE_Utility.ahk` **as administrator**~~
 
 ---
 
