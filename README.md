@@ -7,8 +7,6 @@
 是一份AHK腳本，提供了一系列POE的快捷鍵包括：一鍵喝水、快速撿裝、自動喝水/引爆地雷、切換頻道等等。
 並且根據實際需求，持續擴充當中。
 
-此腳本包含許多客製化的功能，故需先做一些簡單的設定，下面會提供詳細的教學。
-
 ---
 #### 免責聲明 ####
 
@@ -20,7 +18,7 @@
 
 |Shortcut|Description|
 |---    |---    |
-| `滑鼠側鍵`      | 一鍵喝水
+| `2`，`3`，`滑鼠側鍵`      | 一鍵喝水
 | `A`      | 快速撿裝
 | `Ctrl + A`      | "按住"持續撿取物品
 | `Ctrl + P`      | 使用傳送卷軸 
@@ -44,38 +42,46 @@
 
 ---
 
-#### 設定 ####
+#### 預覽 ####
 
-所有的基本設定以及修改綁定按鍵都可以在`POE_Utility.ahk`中完成。
-如果有需要修改綁定按鍵，可以參考[AHK按鍵列表](https://autohotkey.com/docs/KeyList.htm)，建議不要跟遊戲操作和打字會用到的按鍵重複，以免影響使用。
-以下設定如果是你不需要用到的功能，可以直接跳過。
+![](https://i.imgur.com/KKYFncG.png)
 
-進階的AHK使用者，可以在`functions.ahk`中做更細緻的調整，也可以看情況增加自己喜歡的功能。
-
-#### 一鍵嗑藥 ####
+#### 一鍵嗑藥 quick flasks ####
 
 + 一鍵喝水和自動喝水兩個功能，在不同的角色配置應該要有不同的設定。
 
-+ 用任何文字編輯器打開`POE_Utility.ahk`，找到`quick_flask_list = "2-3-4-5-q-r"`，
-把`""`內改成你要快速發送的按鍵序列，以`-`做分隔。像是原本這樣設定時，按下側鍵就等同快速依序按下`2345qr`。
++ **list**是想要快速發送的按鍵序列，用`-`做分隔
 
-+ 按鍵可以是藥水也可以是技能。比如上面範例中：`2345`是功能藥水，`q`是暗影迷蹤，`r`是鮮血狂怒。建議在此功能中只使用**瞬發**的技能，不然可能有點蠢。
++ 按鍵可以是藥水也可以是技能。比如`2-3-4-5-q-w-e`：`2345`是功能藥水，`q`是鋼筋鐵骨，`w`是鮮血狂怒，`e`是暗影迷蹤。建議在此功能中只使用**瞬發**的技能，不然可能有點蠢。
 
-#### 快速撿裝 ####
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/yp8D0kz"  ><a href="//imgur.com/a/yp8D0kz">quick flask demo</a></blockquote>
+
+![](https://imgur.com/8lDp650)
+
+#### 自動喝水 auto flasks ####
+
+1. 用滑鼠指著想要自動喝水的血線，用`Shift + D`得到滑鼠座標和顏色；建議指著血條時盡量靠右，避免礦坑的特效影響到系統判斷
+
+2. 在主視窗設定座標(X, Y)、顏色、和list(用`-`做分隔)
+
+3. 在遊戲裡`Ctrl + F`開啟/關閉自動喝水
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/a79rwEU"  ><a href="//imgur.com/a/a79rwEU">auto flask demo</a></blockquote>
+
+#### 快速撿裝 quick loot ####
 
 + 運作原理：AHK會在畫面中搜尋並點選指定"顏色"的pixel，搭配過濾器來顯示指定的顏色。
 
 + 打開你的過濾器，在想要快撿的物品加上`SetBorderColor 100 0 122 255`就行了。
 
-+ 也可以直接使用我們提供的兩種過濾器(修改自NeverSink)，快速撿取包含：
++ 也可以直接使用我們提供的兩種過濾器(修改自[NeverSink](https://github.com/NeverSinkDev/NeverSink-Filter))，快速撿取包含：
 
    + **NeverSink's filter - 2-SEMI-STRICT(forQuickLoot)**： 卷軸以外的通貨、六洞裝、地圖、預言、化石、有價命運卡
    
    + **NeverSink's filter - 3-STRICT(forQuickLoot)**： 價值**0.5C**以上的通貨、六洞裝、地圖、預言、化石、有價命運卡
 
-#### 使用傳送捲 ####
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/ZtkeSUo"  ><a href="//imgur.com/a/ZtkeSUo">quick loot demo</a></blockquote>
 
-#### 自動喝水 ####
 
 #### 自動引爆地雷 ####
 
@@ -83,10 +89,15 @@
 
 + `POE_Utility.ahk`中的`mine_laying_time = 350`是用來設定引爆的間隔(單位:ms)，可以多試幾次找到最適合自己的值。500大約是8等第一次裝上地雷的時候，350是成形後沒拿地雷杖的速度，拿地雷杖則可以更快。
 
+#### 使用傳送捲 ####
+
+#### 進階設定 ####
+
+所有的基本設定以及修改綁定按鍵都可以在`POE_Utility.ahk`中完成。
+如果有需要修改綁定按鍵，可以參考[AHK按鍵列表](https://autohotkey.com/docs/KeyList.htm)，建議不要跟遊戲操作和打字會用到的按鍵重複，以免影響使用。
+以下設定如果是你不需要用到的功能，可以直接跳過。
+
+進階的AHK使用者，可以在`functions.ahk`中做更細緻的調整，也可以看情況增加自己喜歡的功能。
 
 
----
 
-#### 影片 ####
-
-<a href="https://www.youtube.com/watch?v=-sM8SynMM5I" target="_blank"></a>
