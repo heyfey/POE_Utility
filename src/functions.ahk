@@ -61,14 +61,18 @@ QuickFlask(list){
 }
 
 QuickEnter(channel){
-    BlockInput On
-    temp := Clipboard
-    Send {Enter}
-    Clipboard = /%channel%
-    Send ^v
-    Send {Enter}
-    Clipboard := temp
-    BlockInput Off
+    if channel {
+        BlockInput On
+        ; temp := Clipboard
+        Clipboard := channel
+        ClipWait 
+        Send {Enter}
+        Send ^v
+        Send {Enter}
+        ;Clipboard := temp
+        ;ClipWait
+        BlockInput Off
+    }
     return
 }
 
@@ -85,6 +89,8 @@ LootBigRegion(){
         return False
     }
     else{
+        Px := Px + 10
+        Py := Py + 10
         Click %Px%, %Py%
         return True
     }
@@ -96,6 +102,8 @@ LootSmallRegion(){
         return False
     }
     else{
+        Px := Px + 10
+        Py := Py + 10
         Click %Px%, %Py%
         return True
     }
@@ -106,7 +114,7 @@ LootAll(){
         if !LootSmallRegion(){
             break
         }
-        Sleep 400
+        Sleep loot_dalay
     }
 
     while (GetKeyState("LControl", "P") && GetKeyState("a", "P")){
@@ -116,7 +124,7 @@ LootAll(){
             if !LootSmallRegion(){
                 break
             }
-            Sleep 400
+            Sleep loot_dalay
         }
     }
 }
