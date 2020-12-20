@@ -4,7 +4,7 @@ RunGUI(){
 
 global
 Gui, Font, bold
-Gui, Add, Text, x42 y20 w120 h20 +cBlue gGoToWebsite, Go to website
+Gui, Add, Text, x42 y20 w120 h20 +cBlue gGoToWebsite, go to GitHub
 Gui, Font, norm
 Gui, Add, Edit, x252 y20 w0 h0 , 123 ; dummy edit to avoid a mysterious bug
 
