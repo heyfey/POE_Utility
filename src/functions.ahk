@@ -63,14 +63,15 @@ QuickFlask(list){
 QuickEnter(channel){
     if channel {
         BlockInput On
-        ; temp := Clipboard
+        temp := Clipboard
         Clipboard := channel
         ClipWait 
         Send {Enter}
         Send ^v
         Send {Enter}
-        ;Clipboard := temp
-        ;ClipWait
+        Sleep 100
+        Clipboard := temp
+        ClipWait
         BlockInput Off
     }
     return
