@@ -86,6 +86,7 @@ Gui, Show, x127 y91 h546 w722, POE_Utility
 Return
 
 GuiClose:
+SaveSettings()
 ExitApp
 
 GoToWebsite:
