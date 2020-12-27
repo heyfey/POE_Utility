@@ -19,7 +19,7 @@ Though I simply implement some features I need, any suggestion is welcome. Feel 
 | `2`, `3`, `side button`      | quick flasks
 | `A`      | quick loot
 | `Ctrl + A`      | hold to keep auto-looting
-| `Ctrl + P`      | use protal scroll 
+| `Ctrl + J`      | use protal scroll 
 | `Ctrl + D`      | auto-detonating mine on/off
 | `Ctrl + F`      | auto-flasks on/off
 | `F2 ~ F8`，`Ctrl + ~` | quick enter |

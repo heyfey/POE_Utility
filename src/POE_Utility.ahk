@@ -118,6 +118,6 @@ XButton1::QuickFlask(quick_flask_list_1)
 
 ~^a::LootAll()                             ; Ctrl+A: Hold to keep looting.
 
-~^p::OpenPortal()                          ; Ctrl+F: Use portal scroll 
+~^j::OpenPortal()                          ; Ctrl+J: Use portal scroll 
 
 ~^PgUp::QuickSearchItem()                  ; Ctrl+PageUp: Search item on official trade.
