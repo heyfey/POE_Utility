@@ -89,8 +89,7 @@ QuickFlaskLabel1:
 QuickFlask(quick_flask_list_1) 
 return
 
-~RButton::
-AutoDetonate()
+~RButton::AutoDetonate()
 
 ~^d::Activate_AutoDetonate()               ; Ctrl+D: 開啟/關閉自動引爆地雷
 
