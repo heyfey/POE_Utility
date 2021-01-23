@@ -20,14 +20,14 @@ loot_list = ["Class Maps",
              "Sockets 6", "LinkedSockets 6",
              "Map Fragments",
              "StackSize", # include Simulacrum Splinters, Perandus Coin
+             "Simulacrum Splinter",
              "Engineer's Orb", "Chaos Shard", "Alchemy Shard", # Common currency
-             "Awakened Sextant", "Abrasive Catalyst", "Bestiary Orb" # Rare currency
-             "Delve Stackable Socketable Currency",
-             "Faceted Fossil", "Bloodstained Fossil", "Aberrant Fossil", "Frigid Fossil", # Fossil T1-T4
+             "Exalted Shard", "Chaos Orb", "Abrasive Catalyst", # Regular Rare Currency
+             "Fractured Fossil", "Faceted Fossil", "Aetheric Fossil", "Aberrant Fossil", # Fossil T1-T4
              "Delirium Orb",
              "Prime Regrading Lens", "Rogue's Marker",
-             "Exalted Orb", "Ancient Orb" # Top currency
-             "Golden Oil", "Opalescent Oil", "Amber Oil", # Oil T1-T3
+             "Exalted Orb", "Ancient Orb", "Blessing of Chayula", # Top currency
+             "Golden Oil", "Opalescent Oil", "Azure Oil", "Amber Oil", # Oil T1-T4
              "Deafening Essence of", "Remnant of Corruption", "Screaming Essence of", # Essence T1-T3
              "Splinter of Chayula", "Timeless Eternal Empire Splinter", "Splinter of Esh",
              "Class Incubator",
@@ -37,6 +37,7 @@ loot_list = ["Class Maps",
              "Cursed Words", "Boon of Justice", # Divination cards special, T4C
              "Metamorph",
              "Quality 20",
+             "Prime Alchemical Resonator", "Potent Chaotic Resonator", "Potent Alchemical Resonator", # Resonators T1-T3
              ] 
 # --------------------------------------------------------------------------------------
 

@@ -6221,9 +6221,9 @@ Show # $tier->t21 $type->currency
 Show # $tier->t22 $type->currency
 	Class Currency
 	BaseType == "Ancient Shard" "Blessing of Esh" "Blessing of Tul" "Blessing of Uul-Netol" "Blessing of Xoph" "Chaos Orb" "Harbinger's Orb" "Orb of Annulment" "Ritual Splinter" "Stacked Deck" "Tempering Catalyst"
+    SetBorderColor 100 0 122 255 # for quick-loot
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
-	SetBorderColor 0 0 0 255                # BORDERCOLOR:	 Neutral T1
 	SetBackgroundColor 249 150 25 255       # BACKGROUND:	 Currency T3
 	DisableDropSound True
 	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound
@@ -6298,9 +6298,9 @@ Show # $type->vials $tier->restex $safe
 Show # $type->currency->resonator $tier->t1
 	Class "Delve Stackable Socketable Currency"
 	BaseType == "Prime Alchemical Resonator" "Prime Chaotic Resonator"
+    SetBorderColor 100 0 122 255 # for quick-loot
 	SetFontSize 45
 	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
-	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
 	SetBackgroundColor 240 90 35 255        # BACKGROUND:	 Currency T2
 	DisableDropSound True
 	PlayAlertSound 1 300                    # DROPSOUND:	 T1 Dropsound
@@ -6310,9 +6310,9 @@ Show # $type->currency->resonator $tier->t1
 Show # $type->currency->resonator $tier->t2
 	Class "Delve Stackable Socketable Currency"
 	BaseType == "Potent Chaotic Resonator" "Powerful Chaotic Resonator" "Primitive Chaotic Resonator"
+    SetBorderColor 100 0 122 255 # for quick-loot
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 	SetBackgroundColor 213 159 0 255        # BACKGROUND:	 Currency T4
 	DisableDropSound True
 	PlayAlertSound 2 100                    # DROPSOUND:	 Splinter Sound
@@ -6322,9 +6322,9 @@ Show # $type->currency->resonator $tier->t2
 Show # $type->currency->resonator $tier->t3
 	Class "Delve Stackable Socketable Currency"
 	BaseType == "Potent Alchemical Resonator" "Powerful Alchemical Resonator" "Primitive Alchemical Resonator"
+    SetBorderColor 100 0 122 255 # for quick-loot
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
-	SetBorderColor 0 0 0 200                # BORDERCOLOR:	 Neutral T2
 	SetBackgroundColor 210 178 135 255      # BACKGROUND:	 Currency T5
 	DisableDropSound True
 	PlayAlertSound 2 100                    # DROPSOUND:	 Splinter Sound
@@ -6377,9 +6377,9 @@ Show # $tier->t3 $type->currency->deliriumorbs
 Show # $tier->t1 $type->currency->fossil
 	Class Currency
 	BaseType "Fractured Fossil"
+    SetBorderColor 100 0 122 255 # for quick-loot
 	SetFontSize 45
 	SetTextColor 255 0 0 255                # TEXTCOLOR:	 T0 Item
-	SetBorderColor 255 0 0 255              # BORDERCOLOR:	 T0 Item
 	SetBackgroundColor 255 255 255 255      # BACKGROUND:	 T0 Drop
 	PlayAlertSound 6 300                    # DROPSOUND:	 T0 Drop
 	PlayEffect Red
@@ -6399,9 +6399,9 @@ Show # $tier->t2 $type->currency->fossil
 Show # $tier->t3 $type->currency->fossil
 	Class Currency
 	BaseType "Aetheric Fossil" "Dense Fossil" "Enchanted Fossil" "Encrusted Fossil" "Gilded Fossil" "Glyphic Fossil" "Hollow Fossil" "Jagged Fossil" "Lucent Fossil" "Prismatic Fossil" "Serrated Fossil" "Shuddering Fossil" "Tangled Fossil"
+    SetBorderColor 100 0 122 255 # for quick-loot
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
-	SetBorderColor 0 0 0 255                # BORDERCOLOR:	 Neutral T1
 	SetBackgroundColor 249 150 25 255       # BACKGROUND:	 Currency T3
 	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound
 	PlayEffect Yellow
@@ -6460,9 +6460,9 @@ Show # $tier->t11 $type->currency
 Show # $tier->t12 $type->currency
 	Class Currency
 	BaseType == "Ancient Orb" "Blessing of Chayula" "Divine Orb" "Secondary Regrading Lens"
+    SetBorderColor 100 0 122 255 # for quick-loot
 	SetFontSize 45
 	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
-	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
 	SetBackgroundColor 240 90 35 255        # BACKGROUND:	 Currency T2
 	DisableDropSound True
 	PlayAlertSound 1 300                    # DROPSOUND:	 T1 Dropsound
@@ -6476,9 +6476,9 @@ Show # $tier->t12 $type->currency
 Show # $tier->t1 $type->currency->oil
 	Class Currency
 	BaseType "Golden Oil"
+    SetBorderColor 100 0 122 255 # for quick-loot
 	SetFontSize 45
 	SetTextColor 255 0 0 255                # TEXTCOLOR:	 T0 Item
-	SetBorderColor 255 0 0 255              # BORDERCOLOR:	 T0 Item
 	SetBackgroundColor 255 255 255 255      # BACKGROUND:	 T0 Drop
 	PlayAlertSound 6 300                    # DROPSOUND:	 T0 Drop
 	PlayEffect Red
@@ -6498,9 +6498,9 @@ Show # $tier->t2 $type->currency->oil
 Show # $tier->t3 $type->currency->oil
 	Class Currency
 	BaseType "Azure Oil" "Black Oil" "Crimson Oil" "Indigo Oil" "Teal Oil" "Violet Oil"
+    SetBorderColor 100 0 122 255 # for quick-loot
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
-	SetBorderColor 0 0 0 255                # BORDERCOLOR:	 Neutral T1
 	SetBackgroundColor 249 150 25 255       # BACKGROUND:	 Currency T3
 	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound
 	PlayEffect White
@@ -6693,9 +6693,9 @@ Show # $tier->t4 $type->currency->splinter->simulacrum
 Show # $tier->t5 $type->currency->splinter->simulacrum
 	Class Currency
 	BaseType "Simulacrum Splinter"
+    SetBorderColor 100 0 122 255 # for quick-loot
 	SetFontSize 45
 	SetTextColor 255 235 235 255            # TEXTCOLOR:	 Splinter
-	SetBorderColor 210 20 210 255           # BORDERCOLOR:	 Chayula
 	SetBackgroundColor 65 20 80             # BACKGROUND:	 Breach
 	PlayAlertSound 2 100                    # DROPSOUND:	 Splinter Sound
 	PlayEffect Grey
