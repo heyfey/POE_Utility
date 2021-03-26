@@ -10,6 +10,16 @@ Though I simply implement some features I need, any suggestion is welcome. Feel 
 
 *User must understand that many features of this script definitely violate PoE user rules.*
 
+---
+
+* [Demo](#Demo)
+* [Shorcuts](#Shorcuts)
+* [Usage](#Usage)
+* [GUI](#GUI)
+* [Setting](#Setting)
+
+---
+
 ## Demo
 
 ### Quick loot
@@ -54,7 +64,7 @@ Though I simply implement some features I need, any suggestion is welcome. Feel 
 
 ![image](https://i.imgur.com/KKYFncG.png)
 
-## Settings
+## Setting
 
 ### Quick-loot
 
