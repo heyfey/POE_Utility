@@ -13,8 +13,8 @@ Though I simply implement some features I need, any suggestion is welcome. Feel 
 ---
 
 * [Demo](#Demo)
-* [Shortcuts](#Shorcuts)
 * [Usage](#Usage)
+* [Shortcuts](#Shortcuts)
 * [GUI](#GUI)
 * [Settings](#Settings)
 
@@ -32,6 +32,18 @@ Though I simply implement some features I need, any suggestion is welcome. Feel 
 ![](https://github.com/heyfey/POE_Utility/blob/master/demo/quick-flask.gif)
 
 
+## Usage
+
+1. Clone or download this repository
+
+2. Run `POE_Utility.exe` **as administrator**
+
+~~1. Download and install [AutoHotKey](https://www.autohotkey.com/); If unexpectedly shutdown or hang, try version [`AutoHotkey_1.1.28.02`](https://www.autohotkey.com/download/1.1/)~~
+
+~~2. Clone or download this repository~~
+
+~~3. Run `POE_Utility.ahk` **as administrator**~~
+
 ## Shortcuts
 
 |Shortcut|Description|
@@ -47,18 +59,6 @@ Though I simply implement some features I need, any suggestion is welcome. Feel 
 | `Shift + D`      | get cursor [coordinate, color]
 
 > key bindings can be modified in GUI, note that you might not want to bind keys for game play and typing to shortcut
-
-## Usage
-
-1. Clone or download this repository
-
-2. Run `POE_Utility.exe` **as administrator**
-
-~~1. Download and install [AutoHotKey](https://www.autohotkey.com/); If unexpectedly shutdown or hang, try version [`AutoHotkey_1.1.28.02`](https://www.autohotkey.com/download/1.1/)~~
-
-~~2. Clone or download this repository~~
-
-~~3. Run `POE_Utility.ahk` **as administrator**~~
 
 ## GUI
 
