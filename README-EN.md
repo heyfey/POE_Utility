@@ -13,10 +13,10 @@ Though I simply implement some features I need, any suggestion is welcome. Feel 
 ---
 
 * [Demo](#Demo)
-* [Shorcuts](#Shorcuts)
+* [Shortcuts](#Shorcuts)
 * [Usage](#Usage)
 * [GUI](#GUI)
-* [Setting](#Setting)
+* [Settings](#Settings)
 
 ---
 
@@ -64,7 +64,7 @@ Though I simply implement some features I need, any suggestion is welcome. Feel 
 
 ![image](https://i.imgur.com/KKYFncG.png)
 
-## Setting
+## Settings
 
 ### Quick-loot
 
