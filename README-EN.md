@@ -2,7 +2,7 @@
 
 ## Overview
 
-**POE-Utility** provides shortcuts for PoE such as: quick-loot, quick-flasks, auto-flasks, and switch channel, etc. These shorcuts can significantly improve one's gaming experience
+**POE-Utility** provides shortcuts for PoE such as: **quick-loot**, **quick-flasks**, **auto-flasks**, and **switch channel**, etc. These shorcuts can significantly improve one's gaming experience
 
 Though I simply implement some features I need, any suggestion is welcome. Feel free to open issues or contact tsungtsohsieh@gmail.com
 
