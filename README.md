@@ -19,8 +19,8 @@
 ---
 
 * [Demo](#Demo)
-* [快捷鍵](#快捷鍵)
 * [如何使用](#如何使用)
+* [快捷鍵](#快捷鍵)
 * [介面](#介面)
 * [設定](#設定)
 
@@ -38,6 +38,18 @@
 ![](https://github.com/heyfey/POE_Utility/blob/master/demo/quick-flask.gif)
 
 
+## 如何使用
+
+1. `Clone or download`下載本專案所有原始碼
+
+2. 以系統管理員身分執行 `POE_Utility.exe`
+
+~~1. 下載並安裝[AutoHotKey](https://www.autohotkey.com/)。如果會閃退或沒反應，試試看版本號 `AutoHotkey_1.1.28.02`~~
+
+~~2. `Clone or download`下載本專案所有原始碼~~
+
+~~3. 以系統管理員身分執行 `POE_Utility.ahk`~~
+
 
 ## 快捷鍵 
 
@@ -54,21 +66,6 @@
 | `Shift + D`      | 取得游標座標, 顏色
 
 > 綁定按鍵可以在GUI修改；建議不要跟遊戲操作和打字會用到的按鍵重複，以免影響使用
-
-
-
-## 如何使用
-
-1. `Clone or download`下載本專案所有原始碼
-
-2. 以系統管理員身分執行 `POE_Utility.exe`
-
-~~1. 下載並安裝[AutoHotKey](https://www.autohotkey.com/)。如果會閃退或沒反應，試試看版本號 `AutoHotkey_1.1.28.02`~~
-
-~~2. `Clone or download`下載本專案所有原始碼~~
-
-~~3. 以系統管理員身分執行 `POE_Utility.ahk`~~
-
 
 
 ## 介面 
