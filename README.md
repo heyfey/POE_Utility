@@ -1,14 +1,14 @@
 
 [English guide](https://github.com/heyfey/POE_Utility/blob/master/README-EN.md)
 
----
+
 
 **POE-Utility**
 是一份AHK腳本，提供POE的快捷鍵包括：**自動撿裝、自動喝水、一鍵喝水、切換頻道**，等等
 
 並且根據實際需求，持續擴充當中
 
----
+
 
 ## 免責聲明 
 
@@ -16,9 +16,14 @@
 
 > (不過我還沒被封就是了) (本腳本不會讀取/修改記憶體內容)
 
----
+* [示範影片](#示範影片)
+* [快捷鍵](#快捷鍵)
+* [如何使用](#如何使用)
+* [介面](#介面)
+* [設定](#設定)
 
-## Demo
+
+## 示範影片
 
 ### 自動撿裝
 ![](https://github.com/heyfey/POE_Utility/blob/master/demo/quick-loot.gif)
@@ -29,7 +34,7 @@
 ### 一鍵喝水
 ![](https://github.com/heyfey/POE_Utility/blob/master/demo/quick-flask.gif)
 
----
+
 
 ## 快捷鍵 
 
@@ -47,7 +52,7 @@
 
 > 綁定按鍵可以在GUI修改；建議不要跟遊戲操作和打字會用到的按鍵重複，以免影響使用
 
----
+
 
 ## 如何使用
 
@@ -61,13 +66,12 @@
 
 ~~3. 以系統管理員身分執行 `POE_Utility.ahk`~~
 
----
 
-## GUI 
+
+## 介面 
 
 ![image](https://i.imgur.com/KKYFncG.png)
 
----
 
 ## 設定
 
