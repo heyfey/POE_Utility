@@ -90,8 +90,8 @@ LootBigRegion(){
         return False
     }
     else{
-        Px := Px + 10
-        Py := Py + 10
+        Px := Px + 50
+        Py := Py + 20
         Click %Px%, %Py%
         return True
     }
@@ -103,8 +103,8 @@ LootSmallRegion(){
         return False
     }
     else{
-        Px := Px + 10
-        Py := Py + 10
+        Px := Px + 50
+        Py := Py + 20
         Click %Px%, %Py%
         return True
     }
