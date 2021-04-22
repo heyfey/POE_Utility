@@ -26,17 +26,15 @@
 
 ---
 
-## Demo
+## Demo 
 
-### 自動撿裝
-![](https://github.com/heyfey/POE_Utility/blob/master/demo/quick-loot.gif)
+(請點進去看展示，以及如何設定)
 
-### 偵測血線(或魔力)自動喝水
-![](https://github.com/heyfey/POE_Utility/blob/master/demo/auto-flask.gif)
+### [自動撿裝](https://i.imgur.com/2PIWJTh.gifv)
 
-### 一鍵喝水
-![](https://github.com/heyfey/POE_Utility/blob/master/demo/quick-flask.gif)
+### [偵測血線(或魔力)自動喝水](https://i.imgur.com/8lDp650.gifv)
 
+### [一鍵喝水](https://i.imgur.com/GDZHEh4.gifv)
 
 ## 如何使用
 
@@ -77,6 +75,8 @@
 
 ###  自動撿裝 quick loot
 
+[demo](https://i.imgur.com/2PIWJTh.gifv)
+
 + 原理：AHK會在畫面中搜尋並點選指**顏色**的pixel，搭配過濾器來顯示指定的顏色
 
 + 打開你的過濾器，在想要撿取的物品加上`SetBorderColor 100 0 122 255`就行了
@@ -86,6 +86,8 @@
 
 ### 一鍵喝水 quick flask
 
+[demo](https://i.imgur.com/GDZHEh4.gifv) (請點進去看如何設定)
+
 + 一鍵喝水和自動喝水兩個功能，在不同的角色配置應該要有不同的設定。
 
 + `list`是想要快速發送的按鍵序列，用`-`做分隔
@@ -94,6 +96,8 @@
 
 
 ### 自動喝水 auto flask
+
+[demo](https://i.imgur.com/8lDp650.gifv) (請點進去看如何設定)
 
 1. 用滑鼠指著想要自動喝水的血線，用`Shift + D`得到滑鼠座標和顏色；建議指著血條時盡量靠右，避免礦坑的特效影響到系統判斷
 
