@@ -22,14 +22,13 @@ Though I simply implement some features I need, any suggestion is welcome. Feel 
 
 ## Demo
 
-### Quick loot
-![](https://github.com/heyfey/POE_Utility/blob/master/demo/quick-loot.gif)
+Please click in the links to see demos and how to use.
 
-### Auto-flasks when low life
-![](https://github.com/heyfey/POE_Utility/blob/master/demo/auto-flask.gif)
+### [Quick loot](https://i.imgur.com/2PIWJTh.gifv)
 
-### Quick-flasks
-![](https://github.com/heyfey/POE_Utility/blob/master/demo/quick-flask.gif)
+### [Auto-flasks when low life](https://i.imgur.com/8lDp650.gifv)
+
+### [Quick-flasks](https://i.imgur.com/GDZHEh4.gifv)
 
 
 ## Usage
@@ -68,12 +67,16 @@ Though I simply implement some features I need, any suggestion is welcome. Feel 
 
 ### Quick-loot
 
+[demo](https://i.imgur.com/2PIWJTh.gifv)
+
 + AHK will search for pixel with target **color** and click it; we use itemfilter to display color we want
 + In your itemfilter, add `SetBorderColor 100 0 122 255` to your desire loot
 + Or simply use the [itemfilter I provided](https://github.com/heyfey/POE_Utility/tree/master/itemfilter) (modified from [NeverSink-Filter](https://github.com/NeverSinkDev/NeverSink-Filter) ) to quick-loot: currency, 6-socket, map, fossil, resonator, incubator, valuable prophecy, divination card, high-tier essence, oil
 
 
 ### Quick-flasks
+
+[demo](https://i.imgur.com/GDZHEh4.gifv) (Please click in the link to see how to use)
 
 + Different character may need different settings for quick-flasks and auto-flasks
 + You can change key binding and flasks list in GUI
@@ -82,6 +85,8 @@ Though I simply implement some features I need, any suggestion is welcome. Feel 
 
 
 ### Auto-flasks 
+
+[demo](https://i.imgur.com/8lDp650.gifv) (Please click in the link to see how to use)
 
 1. Point to blood line you want to auto-flasks, use `Shift + D` to get cursor coordinate(X, Y) and color
 2. Input coordinate(X, Y) and color in setting window
