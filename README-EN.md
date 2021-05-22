@@ -52,6 +52,7 @@ Please click in the links to see demos and how to use.
 | `Ctrl + A`      | hold to keep looting
 | `Ctrl + J`      | use protal scroll 
 | `Ctrl + D`      | auto-detonating mine on/off
+| `Ctrl + F`      | quick-flasks on/off
 | `Ctrl + F`      | auto-flasks on/off
 | `F2 ~ F8`，`Ctrl + ~` | quick enter |
 | `Ctrl + PageUp`      | search item on cursor; if none, search by input
@@ -82,6 +83,7 @@ Please click in the links to see demos and how to use.
 + You can change key binding and flasks list in GUI
 + `list` is the key sequence you want to send, which is not limited to flasks, you can add as many keys (skills) as you want; use `-` as delimiter 
 + For example: `2-3-4-5-q-w-e`, `2345` for utility flasks, `q` for Blood Rage, `w` for Steelskin/Molten Shell, `e` for Phase Run
++ In game, use `Ctrl + L` to turn on/off quick-flasks
 
 
 ### Auto-flasks 

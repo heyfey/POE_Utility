@@ -51,6 +51,18 @@ AutoFlask(){
     return
 }
 
+Activate_QuickFlask(){
+    quick_flask_active := !quick_flask_active
+    if quick_flask_active{
+        MsgBox , 0, , Quick flask : On, 0.5
+        AutoFlask()
+    }
+    else{
+        MsgBox , 0, , Quick flask : Off, 0.5
+    }
+    return
+}
+
 QuickFlask(list){
     Loop, parse, list, -
     {

@@ -17,6 +17,8 @@ global quickFlasksHotkey1
 global quick_flask_list
 global quick_flask_list_1
 
+global quick_flask_active = True
+
 global lootColor
 global loot_dalay
 
@@ -55,12 +57,24 @@ RunGUI()
 ;===============================================================================
 
 QuickFlaskLabel0:
-QuickFlask(quick_flask_list) 
-return
+    if quick_flask_active{
+        QuickFlask(quick_flask_list)
+    }
+    else{
+        Send, %quickFlasksHotkey0%
+    }
+    return
 
 QuickFlaskLabel1:
-QuickFlask(quick_flask_list_1) 
-return
+    if quick_flask_active{
+        QuickFlask(quick_flask_list_1)
+    }
+    else{
+        Send, %quickFlasksHotkey1%
+    }
+    return
+
+~^l::Activate_QuickFlask()                 ; Ctrl+L: 開啟/關閉一鍵喝水
 
 ~RButton::AutoDetonate()
 
