@@ -43,26 +43,9 @@ Please click in the links to see demos and how to use.
 
 ~~3. Run `POE_Utility.ahk` **as administrator**~~
 
-## Shortcuts
-
-|Shortcut|Description|
-|---    |---    |
-| `2`, `3`, `side button`      | quick flasks
-| `A`      | quick loot
-| `Ctrl + A`      | hold to keep looting
-| `Ctrl + J`      | use protal scroll 
-| `Ctrl + D`      | auto-detonating mine on/off
-| `Ctrl + F`      | quick-flasks on/off
-| `Ctrl + F`      | auto-flasks on/off
-| `F2 ~ F8`，`Ctrl + ~` | quick enter |
-| `Ctrl + PageUp`      | search item on cursor; if none, search by input
-| `Shift + D`      | get cursor [coordinate, color]
-
-> key bindings can be modified in GUI, note that you might not want to bind keys for game play and typing to shortcut
-
 ## GUI
 
-![image](https://i.imgur.com/KKYFncG.png)
+![image](https://user-images.githubusercontent.com/19587790/119235821-d89a9600-bb66-11eb-99df-c0d4217c12bd.png)
 
 ## Settings
 
