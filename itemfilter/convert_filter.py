@@ -16,28 +16,31 @@ target_suffix = "-quick-loot.filter"
 
 loot_set = "    SetBorderColor 100 0 122 255 # for quick-loot\n"
 
-loot_list = ["Class Maps", 
-             "Sockets 6", "LinkedSockets 6",
+loot_list = ["Class \"Maps\"", 
+             "Sockets >= 6", "LinkedSockets 6",
              "Map Fragments",
-             "StackSize", # include Simulacrum Splinters, Perandus Coin
+             "StackSize", # include Simulacrum Splinters, Perandus Coin, 
              "Simulacrum Splinter",
-             "Engineer's Orb", "Chaos Shard", "Alchemy Shard", # Common currency
-             "Exalted Shard", "Chaos Orb", "Abrasive Catalyst", # Regular Rare Currency
+             # Currency - Regular Currency Tiering
+             "Exalted Orb", "Ancient Orb", "Blessing of Chayula", # t1exalted, t2divine
+             "Exalted Shard", "Chaos Orb", "Abrasive Catalyst", # t3annul, t4chaos
+             "Cartographer's Chisel", "Blessed Orb", # t5alchemy, t6chrom
+             "Engineer's Orb", "Chaos Shard", "Alchemy Shard", # t7chance, t8trans
              "Fractured Fossil", "Faceted Fossil", "Aetheric Fossil", "Aberrant Fossil", # Fossil T1-T4
              "Delirium Orb",
              "Prime Regrading Lens", "Rogue's Marker",
-             "Exalted Orb", "Ancient Orb", "Blessing of Chayula", # Top currency
-             "Golden Oil", "Opalescent Oil", "Azure Oil", "Amber Oil", # Oil T1-T4
+             "Tainted Oil", "Golden Oil", "Black Oil", "Azure Oil", "Amber Oil", # Oil T1-T4
              "Deafening Essence of", "Remnant of Corruption", "Screaming Essence of", # Essence T1-T3
              "Splinter of Chayula", "Timeless Eternal Empire Splinter", "Splinter of Esh",
-             "Class Incubator",
+             "Class \"Incubator\"",
              "Deregulation Scroll", "Cartographer's Seal", # Others
-             "Darktongue's Shriek", "A Dishonourable Death", "A Call into the Void", # Prophecy T1-T3
-             "Abandoned Wealth", "Azyran's Reward", "A Dab of Ink", # Divination cards T1-T3
-             "Cursed Words", "Boon of Justice", # Divination cards special, T4C
+             "Fated Connections", "A Dishonourable Death", "A Prodigious Hand", "A Master Seeks Help", # Prophecy T1-T3
+             "Abandoned Wealth", "A Note in the Wind", "A Familiar Call", # Divination cards T1-T3
+             "Boon of Justice", # Divination cards t4c
              "Metamorph",
              "Quality 20",
              "Prime Alchemical Resonator", "Potent Chaotic Resonator", "Potent Alchemical Resonator", # Resonators T1-T3
+             "Contract", "Blueprint", "Heist Target" # Heist
              ] 
 # --------------------------------------------------------------------------------------
 
