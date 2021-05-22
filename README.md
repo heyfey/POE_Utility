@@ -49,27 +49,8 @@
 ~~3. 以系統管理員身分執行 `POE_Utility.ahk`~~
 
 
-## 快捷鍵 
-
-|Shortcut|Description|
-|---    |---    |
-| `2`，`3`，`滑鼠側鍵`      | 一鍵喝水
-| `A`      | 自動撿裝
-| `Ctrl + A`      | "按住"持續自動撿裝
-| `Ctrl + J`      | 使用傳送卷軸 
-| `Ctrl + D`      | 開啟/關閉自動引爆地雷
-| `Ctrl + L`      | 開啟/關閉一鍵喝水
-| `Ctrl + F`      | 開啟/關閉自動喝水
-| `Ctrl + PageUp`      | 在賣場查詢游標上的物品，如果沒有則用"輸入"查詢
-| `F2 ~ F8`，`Ctrl + ~` | 快速輸入 |
-| `Shift + D`      | 取得游標座標, 顏色
-
-> 綁定按鍵可以在GUI修改；建議不要跟遊戲操作和打字會用到的按鍵重複，以免影響使用
-
-
 ## 介面 
-
-![image](https://i.imgur.com/KKYFncG.png)
+![image](https://user-images.githubusercontent.com/19587790/119235821-d89a9600-bb66-11eb-99df-c0d4217c12bd.png)
 
 
 ## 設定
@@ -112,6 +93,5 @@
 ### 進階設定 
 
 進階的AHK使用者，可以在`functions.ahk`中做更細節的調整，也可以看情況增加自己喜歡的功能。
-
 
 
