@@ -123,7 +123,7 @@ TurnOffHotkey(key){
 
 TurnOnHotkey(key, label){
     if key{
-        Hotkey, %key%, %label%
+        Hotkey, %key%, %label%, On
     }
     else{
         ;Msgbox, %key%
