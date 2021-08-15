@@ -51,6 +51,13 @@ AutoFlask(){
     return
 }
 
+Set_Autoflask(){
+    MouseGetPos, low_life_X, low_life_Y
+    PixelGetColor, life_color, %low_life_X%, %low_life_Y%
+    MsgBox , 0, , Auto Flask reset. X: %low_life_X%. Y: %low_life_Y%. color: %life_color%, 1
+    return
+}
+
 Activate_QuickFlask(){
     quick_flask_active := !quick_flask_active
     if quick_flask_active{

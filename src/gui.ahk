@@ -31,14 +31,13 @@ Gui, Add, GroupBox, x30 y190 w380 h160 , Auto Flasks
 Gui, Add, Text, x40 y220 w80 h20 , Ctrl + F
 Gui, Font, norm
 Gui, Add, Text, x130 y220 w70 h30 , to turn on /off,
-Gui, Add, Text, x210 y220 w30 h20 , X:
-Gui, Add, Text, x210 y250 w30 h20 , Y:
-Gui, Add, Text, x210 y280 w50 h20 , color:
-Gui, Add, Text, x210 y310 w30 h20 , list:
-Gui, Add, Edit, vlow_life_X x250 y220 w60 h20 , %low_life_X%
-Gui, Add, Edit, vlow_life_Y x250 y250 w60 h20 , %low_life_Y%
-Gui, Add, Edit, vlife_color x250 y280 w140 h20 , %life_color%
-Gui, Add, Edit, vlow_life_flask_list x250 y310 w140 h20 , %low_life_flask_list%
+Gui, Add, Text, x210 y220 w30 h20 , list:
+Gui, Add, Edit, vlow_life_flask_list x250 y220 w140 h20 , %low_life_flask_list%
+Gui, Add, Text, x40 y280 w250 h30 , Point to blood line you want to auto-flasks, and press:
+Gui, Font, bold
+Gui, Add, Text, x40 y310 w100 h20 , Ctrl + Shift + F
+Gui, Font, norm
+Gui, Add, Text, x130 y310 w200 h30 , to set coordinates and color to detect
 
 ; loot
 Gui, Font, bold

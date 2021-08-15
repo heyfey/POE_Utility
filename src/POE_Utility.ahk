@@ -82,6 +82,8 @@ QuickFlaskLabel1:
 
 ^f::Activate_AutoFlask()                   ; Ctrl+F: 開啟/關閉自動喝水
 
+~^+F::Set_Autoflask()
+
 XButton2::QuickFlask(quick_flask_list)     ; Side button: 一鍵嗑藥
 
 XButton1::QuickFlask(quick_flask_list_1)
