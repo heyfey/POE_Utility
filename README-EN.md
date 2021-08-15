@@ -14,7 +14,6 @@ Though I simply implement some features I need, any suggestion is welcome. Feel 
 
 * [Demo](#Demo)
 * [Usage](#Usage)
-* [Shortcuts](#Shortcuts)
 * [GUI](#GUI)
 * [Settings](#Settings)
 
@@ -45,7 +44,7 @@ Please click in the links to see demos and how to use.
 
 ## GUI
 
-![image](https://user-images.githubusercontent.com/19587790/119235821-d89a9600-bb66-11eb-99df-c0d4217c12bd.png)
+![image](https://user-images.githubusercontent.com/19587790/129465862-2ec27bde-d61f-4a6f-9a46-f80022d12830.png)
 
 ## Settings
 
@@ -73,10 +72,11 @@ Please click in the links to see demos and how to use.
 
 [demo](https://i.imgur.com/8lDp650.gifv) (Please click in the link to see how to use)
 
-1. Point to blood line you want to auto-flasks, use `Shift + D` to get cursor coordinate(X, Y) and color
-2. Input coordinate(X, Y) and color in setting window
-3. Input flasks list, use `-` as delimiter
-4. In game, use `Ctrl + F` to turn on/off auto-flasks
+1. Input flasks list, use `-` as delimiter
+
+2. Point to blood line you want to auto-flasks, press `Ctrl + Shift + F` to comfirm
+
+3. In game, use `Ctrl + F` to turn on/off auto-flasks
 
 
 ### Advanced settings
