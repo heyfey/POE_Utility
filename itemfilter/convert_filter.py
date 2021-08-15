@@ -24,7 +24,7 @@ loot_list = ["Class \"Maps\"",
              # Currency - Regular Currency Tiering
              "Exalted Orb", "Ancient Orb", "Blessing of Chayula", # t1exalted, t2divine
              "Exalted Shard", "Chaos Orb", "Abrasive Catalyst", # t3annul, t4chaos
-             "Cartographer's Chisel", "Blessed Orb", # t5alchemy, t6chrom
+             "Cartographer's Chisel", "Blessed Orb", "Chromatic Orb", # t5alchemy, t6chrom
              "Engineer's Orb", "Chaos Shard", "Alchemy Shard", # t7chance, t8trans
              "Fractured Fossil", "Faceted Fossil", "Aetheric Fossil", "Aberrant Fossil", # Fossil T1-T4
              "Delirium Orb",
@@ -40,7 +40,8 @@ loot_list = ["Class \"Maps\"",
              "Metamorph",
              "Quality 20",
              "Prime Alchemical Resonator", "Potent Chaotic Resonator", "Potent Alchemical Resonator", # Resonators T1-T3
-             "Contract", "Blueprint", "Heist Target" # Heist
+             "Contract", "Blueprint", "Heist Target", # Heist
+             "Astragali", "Grand Black Scythe Artifact", "Greater Black Scythe Artifact", "Common Black Scythe Artifact", "Artifact", # Expedition
              ] 
 # --------------------------------------------------------------------------------------
 
