@@ -24,7 +24,7 @@ loot_list = ["Class \"Maps\"",
              # Currency - Regular Currency Tiering
              "Exalted Orb", "Ancient Orb", "Blessing of Chayula", # t1exalted, t2divine
              "Exalted Shard", "Chaos Orb", "Abrasive Catalyst", # t3annul, t4chaos
-             "Cartographer's Chisel", "Blessed Orb", "Chromatic Orb", # t5alchemy, t6chrom
+             "Cartographer's Chisel", "Blessed Orb", "Chromatic Orb", "Orb of Fusing", # t5alchemy, t6chrom
              "Engineer's Orb", "Chaos Shard", "Alchemy Shard", # t7chance, t8trans
              "Fractured Fossil", "Faceted Fossil", "Aetheric Fossil", "Aberrant Fossil", # Fossil T1-T4
              "Delirium Orb",
